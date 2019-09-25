@@ -1,0 +1,2 @@
+1. Cambiar el modo de ordenación de índices: GENERAL (en opciones de Access)
+2. Compactar luego la base de datos.

@@ -1,0 +1,55 @@
+#background {
+    -light-black: rgb(74.0, 75.0, 78.0);
+    -dark-highlight: rgb(87.0, 89.0, 92.0);
+    -dark-black: rgb(39.0, 40.0, 40.0);
+    -darkest-black: rgb(5.0, 5.0, 5.0);
+    -mid-gray: rgb(216.0, 222.0, 227.0);
+}
+
+.tool-bar {
+    -fx-base: -dark-black;
+    -fx-background-color:
+        linear-gradient(to bottom, derive(-fx-base,-30.0%), derive(-fx-base,-60.0%)),
+        linear-gradient(to bottom, -light-black 2.0%, -dark-black 98.0%);
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+    -fx-effect: dropshadow(two-pass-box,black,5.0,0.2,0.0,0.0);
+}
+
+#terminate-button {
+	-fx-graphic: url('terminate.png');
+    -fx-background-color: transparent, transparent, transparent, transparent;
+}
+
+#terminate-button:hover {
+    -fx-background-color: transparent, rgba(0.0,0.0,0.0,0.1), rgba(0.0,0.0,0.0,0.1), transparent;
+}
+
+#terminate-button:armed {
+    -fx-background-color: transparent, rgba(0.0,0.0,0.0,0.1), rgba(0.0,0.0,0.0,0.1), rgba(0.0,0.0,0.0,0.2);
+}
+
+.segmented-button-bar .button {
+    -fx-background-color:
+        -darkest-black,
+        -dark-highlight, 
+        linear-gradient(to bottom, -light-black 70.0%, -dark-black 98.0%);
+    -fx-background-insets: 0.0, 1.0 1.0 1.0 0.0, 2.0 1.0 1.0 1.0;
+    -fx-background-radius: 0.0;
+}
+ 
+.segmented-button-bar .button.first {
+    -fx-background-insets: 0.0, 1.0, 2.0 1.0 1.0 1.0;
+    -fx-background-radius: 3.0 0.0 0.0 3.0, 2.0 0.0 0.0 2.0, 2.0 0.0 0.0 2.0;
+}
+ 
+.segmented-button-bar .button.last {
+    -fx-background-insets: 0.0, 1.0 1.0 1.0 0.0, 2.0 1.0 1.0 1.0;
+    -fx-background-radius: 0.0 3.0 3.0 0.0, 0.0 2.0 2.0 0.0, 0.0 2.0 2.0 0.0;
+}
+ 
+.segmented-button-bar .button:pressed {
+    -fx-background-color:
+        -darkest-black,
+        rgb(55.0, 57.0, 58.0),
+        linear-gradient(to top, -light-black 70.0%, -dark-black 98.0%);
+}

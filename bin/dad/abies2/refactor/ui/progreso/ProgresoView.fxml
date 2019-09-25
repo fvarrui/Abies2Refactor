@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="view" xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/8.0.111" fx:controller="dad.abies2.refactor.ui.progreso.ProgresoController">
+	<left>
+		<Label fx:id="progressLabel" text="&lt;título de la tarea&gt;"
+			BorderPane.alignment="CENTER" />
+	</left>
+	<right>
+		<Button fx:id="terminateButton" mnemonicParsing="false"
+			BorderPane.alignment="CENTER">
+			<graphic>
+				<ImageView pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../resources/terminate.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+	</right>
+	<center>
+		<AnchorPane BorderPane.alignment="CENTER">
+			<children>
+				<ProgressBar fx:id="progressBar" progress="0.0"
+					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0"
+					AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+			</children>
+		</AnchorPane>
+	</center>
+	<padding>
+		<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+	</padding>
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dad.abies2.refactor.ui.principal.PrincipalController">
+	<center>
+		<TabPane tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+			<tabs>
+				<Tab closable="false" text="Autores">
+					<content>
+						<fx:include fx:id="autores" source="../autores/AutoresView.fxml" />
+					</content>
+				</Tab>
+				<Tab closable="false" text="Editoriales">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" />
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</center>
+	<bottom>
+		<fx:include fx:id="progreso" source="../progreso/ProgresoView.fxml" />
+	</bottom>
+</BorderPane>
